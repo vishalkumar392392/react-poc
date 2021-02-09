@@ -19,7 +19,7 @@ class Persons extends Component{
             </Person>
           )
         })}
-        
+
   
 
    async componentDidMount(){
@@ -44,7 +44,7 @@ class Persons extends Component{
       
       return (
         <div className={classes.Persons}>
-        <Person key={index} name={per.name.title +' '+per.name.first+' '+per.name.last } 
+        <Person key={index} name={per.name.title +' '+per.name.first} 
         gender={per.gender}
         email={per.email}
         picture={per.picture.large}/>

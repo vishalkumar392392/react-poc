@@ -3,13 +3,13 @@ import classes from './Person.css'
 
 const person = (props) =>{
 
-  const res = ["img-fluid rounded-circle  z-depth-2 w-50 mb-3" ,classes.img].join(' ');
+  const res = ["img-fluid rounded-circle  z-depth-2 w-50 mb-3" ,classes.img,classes.imgstyle].join(' ');
   console.log(res)
   return(
     <div>
     <div >
           <div className="col">
-            <div className={`card ml-2`}>
+            <div className={`card`}>
               <div className="card-body">
                 <img
                   src={props.picture}
@@ -17,7 +17,7 @@ const person = (props) =>{
                   className={res}
                   
                 />
-                <h3 className="text-center">{props.name}</h3>
+                <h3 className="text-center text">{props.name}</h3>
                 <h5 className="text-muted text-center">{props.gender}</h5>
                 <p className="text-center">
                 {props.email}

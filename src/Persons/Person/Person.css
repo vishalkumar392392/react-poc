@@ -17,6 +17,11 @@
 .fab {
   color: #fff;
 }
+.text {
+  word-spacing: 0%;
+  word-wrap: break-word;
+  letter-spacing: 0;
+}
 
 @media (max-width: 768px) {
   #showcase {
